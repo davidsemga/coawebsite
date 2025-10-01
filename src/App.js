@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-scroll";
 import "./App.css";
-import { FaInstagram, FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaLinkedin, FaPalette } from "react-icons/fa";
 
 function App() {
   return (
@@ -20,42 +20,11 @@ function App() {
 {/* Hero Section */}
 <header className="header">
   <div className="hero-background">
-    <img
-      src={`${process.env.PUBLIC_URL}/images/pic1.jpg`}
-      alt="club"
-      className="hero-image"
-    />
-    <img
-      src={`${process.env.PUBLIC_URL}/images/pic2.jpg`}
-      alt="club"
-      className="hero-image"
-    />
-    <img
-      src={`${process.env.PUBLIC_URL}/images/pic3.jpg`}
-      alt="club"
-      className="hero-image"
-    />
-    <img
-      src={`${process.env.PUBLIC_URL}/images/pic4.jpg`}
-      alt="club"
-      className="hero-image"
-    />
-    <img
-      src={`${process.env.PUBLIC_URL}/images/pic5.jpg`}
-      alt="club"
-      className="hero-image"
-    />
-    {/* repeat for smooth scroll */}
-    <img
-      src={`${process.env.PUBLIC_URL}/images/pic1.jpg`}
-      alt="club"
-      className="hero-image"
-    />
-    <img
-      src={`${process.env.PUBLIC_URL}/images/pic2.jpg`}
-      alt="club"
-      className="hero-image"
-    />
+    <img src={`${process.env.PUBLIC_URL}/images/pic1.jpg`} alt="club" />
+    <img src={`${process.env.PUBLIC_URL}/images/pic2.jpg`} alt="club" />
+    <img src={`${process.env.PUBLIC_URL}/images/pic3.jpg`} alt="club" />
+    <img src={`${process.env.PUBLIC_URL}/images/pic4.jpg`} alt="club" />
+    <img src={`${process.env.PUBLIC_URL}/images/pic5.jpg`} alt="club" />
   </div>
   <div className="hero-content">
     <h1>Welcome to The Club</h1>
@@ -63,7 +32,7 @@ function App() {
   </div>
 </header>
 
-      {/* About Section */}
+ {/* About Section */}
 <section id="about" className="section about-section">
   <div className="about-content">
     <div className="about-text">
@@ -71,17 +40,16 @@ function App() {
       <p>
         The Club of Arts is a vibrant community of students dedicated to creating without permission, 
         exploring without limits, and expressing without apology. Our members come from all backgrounds and skill levels, 
-        united by curiosity
-         and a passion for creativity. 
+        united by curiosity and a passion for creativity.
         From visual art and digital media to writing, performance, and collaborative projects, we provide a space where
-         ideas can flourish and boundaries can be pushed. Through workshops, showcases, and ongoing creative projects, 
-         we aim to inspire, challenge, and support one another while building a lasting culture of innovation and expression on campus. 
-         Whether you’re looking to develop your skills, share your work, or simply be part of a community that celebrates imagination in all its forms, 
-        The Club of Arts is your canvas,and we can’t wait to see what you’ll create.
+        ideas can flourish and boundaries can be pushed. Through workshops, showcases, and ongoing creative projects, 
+        we aim to inspire, challenge, and support one another while building a lasting culture of innovation and expression on campus. 
+        Whether you’re looking to develop your skills, share your work, or simply be part of a community that celebrates imagination in all its forms, 
+        The Club of Arts is your canvas, and we can’t wait to see what you’ll create.
       </p>
     </div>
-    <div className="about-image">
-      <img src="/images/club-photo.jpg" alt="Club Activities" />
+    <div className="about-icon">
+       <FaPalette size={120} color="#000000ff" /> {/* customizable size & color */}
     </div>
   </div>
 </section>
