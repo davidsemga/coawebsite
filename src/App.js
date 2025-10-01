@@ -17,23 +17,51 @@ function App() {
         </ul>
       </nav>
 
-      {/* Hero Section */}
-      <header className="header">
-        <div className="hero-background">
-          <img src="/images/pic1.jpg" alt="club" />
-          <img src="/images/pic2.jpg" alt="club" />
-          <img src="/images/pic3.jpg" alt="club" />
-          <img src="/images/pic4.jpg" alt="club" />
-          <img src="/images/pic5.jpg" alt="club" />
-          {/* repeat for smooth scroll */}
-          <img src="/images/pic1.jpg" alt="club" />
-          <img src="/images/pic2.jpg" alt="club" />
-        </div>
-        <div className="hero-content">
-          <h1>Welcome to The Club</h1>
-          <p>Create without limits!</p>
-        </div>
-      </header>
+{/* Hero Section */}
+<header className="header">
+  <div className="hero-background">
+    <img
+      src={`${process.env.PUBLIC_URL}/images/pic1.jpg`}
+      alt="club"
+      className="hero-image"
+    />
+    <img
+      src={`${process.env.PUBLIC_URL}/images/pic2.jpg`}
+      alt="club"
+      className="hero-image"
+    />
+    <img
+      src={`${process.env.PUBLIC_URL}/images/pic3.jpg`}
+      alt="club"
+      className="hero-image"
+    />
+    <img
+      src={`${process.env.PUBLIC_URL}/images/pic4.jpg`}
+      alt="club"
+      className="hero-image"
+    />
+    <img
+      src={`${process.env.PUBLIC_URL}/images/pic5.jpg`}
+      alt="club"
+      className="hero-image"
+    />
+    {/* repeat for smooth scroll */}
+    <img
+      src={`${process.env.PUBLIC_URL}/images/pic1.jpg`}
+      alt="club"
+      className="hero-image"
+    />
+    <img
+      src={`${process.env.PUBLIC_URL}/images/pic2.jpg`}
+      alt="club"
+      className="hero-image"
+    />
+  </div>
+  <div className="hero-content">
+    <h1>Welcome to The Club</h1>
+    <p>Create without limits!</p>
+  </div>
+</header>
 
       {/* About Section */}
 <section id="about" className="section about-section">
