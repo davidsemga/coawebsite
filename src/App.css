@@ -40,44 +40,41 @@ body {
 /* Sections */
 .header {
   position: relative;
-  height: 100vh;
+  width: 100%;
+  height: 100vh; /* full viewport height */
   overflow: hidden;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 .hero-background {
-  position: absolute;
+  display: flex;
+  position: absolute; /* make it behind the text */
   top: 0;
   left: 0;
-  width: 200%; /* wide so animation can loop */
+  width: 60%; /* enough to scroll */
   height: 100%;
-  display: flex;
-  animation: scrollImages 25s linear infinite;
-  z-index: 1;
-  opacity: 0.9; /* dim so text is readable */
+  z-index: 1; /* behind text */
 }
 
-.hero-background img {
-  width: 20%;
+.hero-image {
+  width: 100%;
+  flex-shrink: 0;
   object-fit: cover;
+  animation: scroll-left 25s linear infinite;
 }
 
-@keyframes scrollImages {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-500%); }
 }
 
 .hero-content {
-  position: relative;
+  position: relative; /* above background */
   z-index: 2;
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
 
 .about-section .about-content {
