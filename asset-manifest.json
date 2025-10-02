@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/coawebsite/static/css/main.195978ed.css",
-    "main.js": "/coawebsite/static/js/main.3e9c3ca4.js",
+    "main.js": "/coawebsite/static/js/main.cf3056d6.js",
     "static/js/453.6c41d79f.chunk.js": "/coawebsite/static/js/453.6c41d79f.chunk.js",
     "index.html": "/coawebsite/index.html",
     "main.195978ed.css.map": "/coawebsite/static/css/main.195978ed.css.map",
-    "main.3e9c3ca4.js.map": "/coawebsite/static/js/main.3e9c3ca4.js.map",
+    "main.cf3056d6.js.map": "/coawebsite/static/js/main.cf3056d6.js.map",
     "453.6c41d79f.chunk.js.map": "/coawebsite/static/js/453.6c41d79f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.195978ed.css",
-    "static/js/main.3e9c3ca4.js"
+    "static/js/main.cf3056d6.js"
   ]
 }
