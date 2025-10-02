@@ -20,11 +20,16 @@ function App() {
 {/* Hero Section */}
 <header className="header">
   <div className="hero-background">
-    <img src={`${process.env.PUBLIC_URL}/images/pic1.jpg`} alt="club" />
-    <img src={`${process.env.PUBLIC_URL}/images/pic2.jpg`} alt="club" />
-    <img src={`${process.env.PUBLIC_URL}/images/pic3.jpg`} alt="club" />
-    <img src={`${process.env.PUBLIC_URL}/images/pic4.jpg`} alt="club" />
-    <img src={`${process.env.PUBLIC_URL}/images/pic5.jpg`} alt="club" />
+    <div className="scrolling-images">
+      <img src={`${process.env.PUBLIC_URL}/images/pic1.jpg`} alt="club" />
+      <img src={`${process.env.PUBLIC_URL}/images/pic2.jpg`} alt="club" />
+      <img src={`${process.env.PUBLIC_URL}/images/pic3.jpg`} alt="club" />
+      <img src={`${process.env.PUBLIC_URL}/images/pic4.jpg`} alt="club" />
+      <img src={`${process.env.PUBLIC_URL}/images/pic5.jpg`} alt="club" />
+      {/* Repeat to create seamless loop */}
+      <img src={`${process.env.PUBLIC_URL}/images/pic1.jpg`} alt="club" />
+      <img src={`${process.env.PUBLIC_URL}/images/pic2.jpg`} alt="club" />
+    </div>
   </div>
   <div className="hero-content">
     <h1>Welcome to The Club</h1>
