@@ -46,35 +46,42 @@ body {
 }
 
 .hero-background {
-  display: flex;
-  position: absolute; /* make it behind the text */
+  position: absolute;
   top: 0;
   left: 0;
-  width: 60%; /* enough to scroll */
-  height: 100%;
-  z-index: 1; /* behind text */
-}
-
-.hero-image {
   width: 100%;
-  flex-shrink: 0;
-  object-fit: cover;
-  animation: scroll-left 25s linear infinite;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* keeps images behind text */
 }
 
-@keyframes scroll-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-500%); }
+.scrolling-images {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.scrolling-images img {
+  height: 100vh;       /* keeps images full height */
+  object-fit: cover;   /* avoids stretching */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* adjust so it loops smoothly */
+  }
 }
 
 .hero-content {
-  position: relative; /* above background */
-  z-index: 2;
+  position: relative;
+  z-index: 1;
   text-align: center;
-  color: white;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
-  width: 100%;
+  color: white;
 }
 
 .about-section .about-content {
