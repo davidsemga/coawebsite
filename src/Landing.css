@@ -1,0 +1,47 @@
+.landing-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* pushes the GIF behind the content */
+}
+
+.landing-content {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.landing-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.landing-link {
+  padding: 10px 20px;
+  background-color: rgba(0,0,0,0.5); /* semi-transparent button */
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.landing-link:hover {
+  background-color: rgba(255,255,255,0.2);
+  transform: scale(1.05);
+}

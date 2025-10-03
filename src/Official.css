@@ -1,0 +1,37 @@
+.official-page {
+  text-align: center;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.official-hero {
+  margin-bottom: 2rem;
+}
+
+.official-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #222;
+}
+
+.official-bio {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.official-links a {
+  margin: 0 10px;
+  color: #222;
+  transition: transform 0.2s;
+}
+
+.official-links a:hover {
+  transform: scale(1.2);
+  color: #0077b5; /* Example for LinkedIn hover */
+}
