@@ -114,6 +114,21 @@ body {
   text-align: center;
   padding: 60px 20px;
 }
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* stack vertically */
+    gap: 30px; /* smaller spacing */
+    text-align: center; /* center the text */
+  }
+
+  .about-text, .about-icon {
+    flex: unset; /* reset flex sizing */
+  }
+
+  .about-icon {
+    justify-content: center; /* keep icon centered */
+  }
+}
 
 .officials-grid {
   display: grid;
